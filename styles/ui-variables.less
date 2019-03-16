@@ -1,7 +1,3 @@
-/*
-Include the standard variables from Mailspring's base theme:
-https://github.com/Foundry376/Mailspring/blob/master/app/static/base/ui-variables.less#L37:L40
-*/
 @import "base/ui-variables";
 
 @gray-base: #ffffff;
@@ -12,7 +8,7 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/base/ui-variable
 @gray-lighter: darken(@gray-base, 92.5%);
 @white: #0a0a0a;
 
-@accent-primary: #58b660;
+@accent-primary: #3e8afc;
 @accent-primary-dark: darken(@accent-primary, 10%);
 
 @background-primary: #212121;
@@ -50,3 +46,32 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/base/ui-variable
 
 @toolbar-background-color: #121212;
 @panel-background-color: #121212;
+.sheet-toolbar {
+	border-bottom: 1px solid @border-color-divider;
+	box-shadow: none;
+}
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+	-webkit-filter: invert(100%);
+}
+
+.mail-label {
+	-webkit-filter: contrast(110%) brightness(85%);
+}
+#message-list .message-item-wrap .message-item-white-wrap {
+	box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+		0 1px 1.5px rgba(255, 255, 255, 0.08);
+	background-color: #fff;
+	color: #0a0a0a;
+}
+
+.message-item-area .participants span,
+.message-item-area .message-participants .from-contact,
+.message-item-area .message-participants .collapsed-participants .to-contact,
+.message-item-area span iframe {
+	color: #0a0a0a !important;
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+	color: #aaa;
+}
