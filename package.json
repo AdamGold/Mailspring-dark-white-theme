@@ -1,9 +1,9 @@
 {
-	"name": "theme-half-dark",
+	"name": "theme-dark-white",
 	"title": "Half-Dark",
 	"displayName": "Half Dark Theme",
 	"theme": "ui",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"description": "A great half dark theme - only the email frame is white.",
 	"license": "GPL-3.0",
 	"engines": {
